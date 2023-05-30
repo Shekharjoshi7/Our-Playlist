@@ -90,6 +90,7 @@ nav ul li{
 }
 .songItem{
     height: 40px;
+    width: 100%;
     display: flex;
     background-color: white;
     color: black;
@@ -104,8 +105,15 @@ nav ul li{
     margin: 0px 23px;
     border-radius: 34px;
 }
+.songName{
+    width: 30vw;
+    margin: 5px;
+
+}
 .timestamp{
     margin: 0 23px;
+    position: relative;
+    left: 10%;
 }
 .timestamp i{
     cursor: pointer;
