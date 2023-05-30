@@ -10,13 +10,13 @@ let songItemPlay = Array.from( document.getElementsByClassName("songItemPlay"));
 let timestamp =Array.from( document.getElementsByClassName("timestamp"));
 
 let songs =[
-    {songName: "Tere Hawaale - Laal Singh Chaddha", filePath: "songs/1.mp3",coverPath: "covers/1.jpg"},
+    {songName: "Tere Hawaale", filePath: "songs/1.mp3",coverPath: "covers/1.jpg"},
     {songName: "Soniyo - Raaz ", filePath: "songs/2.mp3",coverPath: "covers/2.jpg"},
     {songName: "Apna Bana Le", filePath: "songs/3.mp3",coverPath: "covers/3.jpg"},
     {songName: "Tum Se Hi", filePath: "songs/4.mp3",coverPath: "covers/4.jpg"},
-    {songName: "Soch - Harrdy Sandhu", filePath: "songs/5.mp3",coverPath: "covers/5.jpg"},
-    {songName: "Do Gallan (Let's Talk)", filePath: "songs/6.mp3",coverPath: "covers/6.jpg"},
-    {songName: "Tu Hi Haqeeqat - Tum Mile mp3 ", filePath: "songs/7.mp3",coverPath: "covers/7.jpeg"},
+    {songName: "Soch ", filePath: "songs/5.mp3",coverPath: "covers/5.jpg"},
+    {songName: "Do Gallan", filePath: "songs/6.mp3",coverPath: "covers/6.jpg"},
+    {songName: "Tu Hi Haqeeqat", filePath: "songs/7.mp3",coverPath: "covers/7.jpeg"},
     {songName: "Safar", filePath: "songs/8.mp3",coverPath: "covers/8.jpg"},
 ]
 songItem.forEach((element,i) => {
@@ -32,13 +32,13 @@ masterPlay.addEventListener('click', ()=>{
         audioElement.play();
         masterPlay.classList.remove('fa-play-circle');
         masterPlay.classList.add('fa-pause-circle');
-        gif.style.opacity = 1;
+       // gif.style.opacity = 1;
     }
     else{
         audioElement.pause();
         masterPlay.classList.remove('fa-pause-circle');
         masterPlay.classList.add('fa-play-circle');
-        gif.style.opacity = 0;
+        ////// gif.style.opacity = 0;                                                                                          
 
     }
 });
@@ -74,7 +74,7 @@ songItemPlay.forEach((element)=>{
         audioElement.src=`songs/${songIndex+1}.mp3`
         masterSongName.innerText=songs[songIndex].songName;
         audioElement.play();
-        gif.style.opacity = 1;
+       //// gif.style.opacity = 1;
         audioElement.currentTime=0;
         masterPlay.classList.remove('fa-play-circle');
         masterPlay.classList.add('fa-pause-circle');
